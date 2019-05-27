@@ -2,8 +2,9 @@
 A laravel + vue starter template
 
 #### Laravue includes
-- Vuex
-- Vue router
+- Laravel 5.8
+- Vuex 3.0.1
+- Vue router 2.6.10
 - Bootstrap vue
 
 #### How to install laravue?
