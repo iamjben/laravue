@@ -12,6 +12,20 @@ const mix = require('laravel-mix');
  */
 
 mix.js('client/main.js', 'public/js')
-    .sass('client/style/main.scss', 'public/css');
+  .sass('client/style/main.scss', 'public/css');
 
 mix.browserSync({ proxy: 'laravue.test' });
+
+mix.webpackConfig({
+  module: {
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      }
+    ]
+  }
+});
+  
