@@ -1,7 +1,7 @@
 ## Laravue
 A laravel + vue starter template
 
-#### Laravue includes
+#### Laravue uses
 - Laravel 5.8
 - Vuex 3.0.1
 - Vue router 2.6.10
