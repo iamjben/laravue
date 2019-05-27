@@ -1,4 +1,12 @@
-## How to install laravue?
+## Laravue
+A laravel + vue starter template
+
+#### Laravue includes
+- Vuex
+- Vue router
+- Bootstrap vue
+
+#### How to install laravue?
 After downloading the repository, make sure to add .env file then run these commands:
 
 #### For laravel
