@@ -9,3 +9,6 @@ After downloading the repository, make sure to add .env file then run these comm
 - npm install
 - npm run dev
 - npm run watch
+
+#### For browsersync setup(For auto-reload)
+- change the proxy based on your localhost setup
