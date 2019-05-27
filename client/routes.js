@@ -1,10 +1,10 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 import Home from './views/Home'
 import About from './views/About'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 export default new VueRouter({
   mode: 'history',
@@ -18,4 +18,4 @@ export default new VueRouter({
       component: About
     }
   ]
-});
+})

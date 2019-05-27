@@ -1,15 +1,8 @@
 <template>
   <div class="app">
     <div class="container pt-5 pb-5">
-      <h1 class="text-center">Laravue</h1>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <router-link to="/">Home</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/about">About</router-link>
-        </li>
-      </ul>
+      <h1 class="text-center">{{title}}</h1>
+      <Navbar />
       <hr>
       <router-view></router-view>
     </div>
@@ -17,27 +10,14 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-Vue.use(BootstrapVue)
-
+import Navbar from './components/Navbar'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Navbar
+  },
+  data: () => ({
+    title: 'Laravue'
+  })
 }
 </script>
-
-<style lang="scss" scoped>
-.nav {
-  position: relative;
-  .nav-item {
-    border-right: 1px solid #DDD;
-    padding: 0 0.5rem;
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-</style>
